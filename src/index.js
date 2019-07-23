@@ -16,7 +16,7 @@ const publicPath=path.join(__dirname,'../public')
 app.set('view engine','hbs')
 app.set('views',viewsPath)
 app.use(express.static(publicPath))
-const port=process.argv.PORT || 3000
+const port=process.env.PORT || 3000
 
 // app.get('',(req,res)=>{
 // res.render('index',{
